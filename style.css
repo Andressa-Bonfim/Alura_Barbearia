@@ -263,3 +263,98 @@ th {
     padding: 8px 15px;
 }
 
+/*Responsive*/
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video ,.main-contacto, .main-produtos{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position:static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%
+    }
+
+    .produtos li {      
+        display: block;    
+    }
+    nav a {
+        font-size: 19px;
+    }
+}
+
+/* 
+Anotações para estudos
+
+faz com que a primeira letra faça seja bold por exemplo 
+.titulo-principal:first-letter {
+    font-weight: bold;
+} 
+
+faz com que a primeira linha seja itálico
+p:first-line {
+    font-style: italic;
+}
+
+antes do titulo coloca a barra
+.titulo-principal:before {
+    content: "[";
+}
+
+depois do titulo coloca a barra
+.titulo-principal:after {
+    content:"]"
+}
+
+só para os filhos diretos de main.
+main > p {
+    background: red; 
+}
+
+selecionar o primeiro parágrafo que sucede uma imagem
+img + p { 
+    background: blue;
+}
+
+selecionar todos os parágrafos localizados depois de uma imagem
+img ~ p {
+    background: yellow
+} 
+
+excluir todos os parágrafos que não compõe missao
+.principal p:not(#missao) {
+    background: orange;
+}
+
+Para que a imagem sempre ocupe a medida correta em outros dispositivos
+.utensilios {
+    width: calc(40% - 26px);
+    float: left;
+    Margin: 0 20px 20px 
+
+}
+
+foi calculado precisamente 350px de largura para este elemento
+.utensilios {
+    width: calc(40% - (26px * 4);
+    float: left;
+    Margin: 0 20px 20px 
+
+}
+
+camada - a de opacidade, chamada alfa - nas cores em RGB.
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0,0,0,0.3);
+}
+*/
